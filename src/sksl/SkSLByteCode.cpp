@@ -4,9 +4,8 @@
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file.
  */
-
-#ifndef SKSL_STANDALONE
 #define SK_ENABLE_SKSL_INTERPRETER
+#ifndef SKSL_STANDALONE
 #include "include/core/SkPoint3.h"
 #include "include/private/SkVx.h"
 #include "src/core/SkUtils.h"   // sk_unaligned_load
