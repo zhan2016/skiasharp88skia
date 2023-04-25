@@ -4,7 +4,7 @@
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file.
  */
-#if defined(SK_ENABLE_SKSL_INTERPRETER)
+#define SK_ENABLE_SKSL_INTERPRETER
 #include "src/sksl/SkSLCompiler.h"
 
 #include <memory>
@@ -54,7 +54,7 @@
 
 #else
 	
-
+#if defined(SK_ENABLE_SKSL_INTERPRETER)
 // At runtime, we load the dehydrated sksl data files. The data is a (pointer, size) pair.
 #include "src/sksl/generated/sksl_fp.dehydrated.sksl"
 #include "src/sksl/generated/sksl_frag.dehydrated.sksl"
