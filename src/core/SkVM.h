@@ -8,6 +8,7 @@
 #ifndef SkVM_DEFINED
 #define SkVM_DEFINED
 #define SKVM_JIT_WHEN_POSSIBLE
+
 #include "include/core/SkBlendMode.h"
 #include "include/core/SkColor.h"
 #include "include/private/SkMacros.h"
