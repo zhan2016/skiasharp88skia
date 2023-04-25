@@ -53,7 +53,8 @@
 #define MODULE_DATA(name) MakeModulePath("sksl_" #name ".sksl")
 
 #else
-
+	
+#if defined(SK_ENABLE_SKSL_INTERPRETER)
 // At runtime, we load the dehydrated sksl data files. The data is a (pointer, size) pair.
 #include "src/sksl/generated/sksl_fp.dehydrated.sksl"
 #include "src/sksl/generated/sksl_frag.dehydrated.sksl"

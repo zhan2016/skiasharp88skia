@@ -6,7 +6,7 @@
  */
 
 #ifndef SKSL_STANDALONE
-
+#define SK_ENABLE_SKSL_INTERPRETER
 #include "include/core/SkPoint3.h"
 #include "include/private/SkVx.h"
 #include "src/core/SkUtils.h"   // sk_unaligned_load
@@ -20,6 +20,7 @@
 namespace SkSL {
 
 #if defined(SK_ENABLE_SKSL_INTERPRETER)
+
 
 constexpr int VecWidth = ByteCode::kVecWidth;
 
